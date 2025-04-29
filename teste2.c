@@ -2,17 +2,21 @@
  
 int main() {
 
-    int i = 0;
+    int numero;
 
-    while (i <= 10){
+    do {
+        printf("Digite um número par para sair do código: \n");
+        scanf("%d", &numero);
 
-        if(i % 2 != 0){
-            printf("O número %d é impar \n", i);
+        if(numero % 2 == 0){
+            printf("%d é par\n", numero);
+        } else {
+            printf("%d é impar\n", numero);
         }
 
-        i++;
-    }
+    } while (numero % 2 != 0);
 
+    printf("\nSaindo do programa...\n");
 
     return 0;
 }
