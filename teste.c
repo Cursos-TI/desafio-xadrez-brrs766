@@ -3,15 +3,14 @@
 int main() {
     int num;
    
-    printf("Digite um número (negativo para sair): \n");
-    scanf("%d", &num);
-   
-    while (num >= 0) {
-        printf("Você digitou: %d\n", num);
-       
-        printf("Digite um número (negativo para sair): \n");
+    do {
+        printf("Digite um número (negativo para sair): ");
         scanf("%d", &num);
-    }
+       
+        if (num >= 0) {
+            printf("Você digitou: %d\n", num);
+        }
+    } while (num >= 0);
    
     printf("Número negativo detectado. Saindo...\n");
    
