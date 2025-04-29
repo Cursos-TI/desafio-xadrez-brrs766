@@ -1,11 +1,18 @@
 #include <stdio.h>
  
 int main() {
-    for (int i = 1; i <= 20; i++) {
-        if (i % 2 == 0) {
-            printf("%d\n", i);
+
+    int i = 0;
+
+    while (i <= 10){
+
+        if(i % 2 != 0){
+            printf("O número %d é impar \n", i);
         }
+
+        i++;
     }
-   
+
+
     return 0;
 }
