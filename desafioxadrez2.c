@@ -42,7 +42,7 @@ printf("=== Desafio: Jogo do Xadrez - MateCheck ===\n");
     // Variáveis do código para a Cavalo
     int movimento1 = 1;
 
-    printf("\nMovendo o Cavalo em L (3 casas)...\n");
+    printf("\nMovendo o Cavalo em L para baixo à esquerda (3 casas)...\n");
 
     while(movimento1--)
     {
