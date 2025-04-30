@@ -2,7 +2,7 @@
 
 int main(){
 
-//  Nível Novato - Movimentação das Peças
+//  Nível Aventureiro - Movimentação das Peças
 printf("=== Desafio: Jogo do Xadrez - MateCheck ===\n");
 
     printf("\nMovendo o Bispo na diagonal superior direita (5 casas)...\n");

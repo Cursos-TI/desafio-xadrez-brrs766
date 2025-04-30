@@ -1,23 +1,16 @@
 #include <stdio.h>
  
-int main() {
-
-    int i, j;
-
-    char letra;
-
-    for(i = 1; i <= 5; i++)
-    {
-        letra = 'A';
-
-        for(j = 1;j <= i; j++)
-        {
-            printf("%c ", letra);
-            ++letra;
-        }
-
-        printf("\n");
+// Função recursiva para imprimir números de n até 1
+void recursiveLoop(int n) {
+    if (n > 0) {
+        printf("%d ", n);  // Imprime o valor atual de n
+        recursiveLoop(n - 1);  // Chama a si mesma com n - 1
     }
-   
+}
+ 
+int main() {
+    int numero = 5;
+    printf("Contagem regressiva: ");
+    recursiveLoop(numero);
     return 0;
 }
